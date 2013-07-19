@@ -5,7 +5,9 @@ A lightweight wrapper around Google HTTP Java Client.
 
 Features
 --------
-- Form-based authentication
+- Facilitates error handling.
+- Facilitates logging.
+- Supports Form-based authentication.
  
 
 Dependencies
