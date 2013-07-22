@@ -12,16 +12,16 @@ Features
 Samples
 -------
 * Minimal example.
-'''java
+```java
 HttpResponse resp = Client.get(new GenericUrl("http://en.wikipedia.org/wiki/Special:Random"));
 if (resp.isSuccessStatusCode())
     // process the response
 else
     // handle an HTTP error response
-'''
+```
 
 * More advanced
-'''java
+```java
 private static final Logger LOGGER = Logger.getLogger(MyClass.class.getName());
 // ...
 Client c = Client
@@ -37,7 +37,7 @@ if (resp.isSuccessStatusCode())
     // process JSON response
 else
     // handle an HTTP error response
-'''
+```
 
 Dependencies
 ------------
