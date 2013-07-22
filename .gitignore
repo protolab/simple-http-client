@@ -1,5 +1,6 @@
 .idea/
-*.impl
+*.iml
+/lib
 *.class
 out/
 
