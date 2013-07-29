@@ -4,11 +4,6 @@ simple-http-client
 A lightweight wrapper around Google HTTP Java Client. Provides "facade" API to facilitate use of the Google HTTP Client
 for common tasks.
 
-Features
---------
-- Facilitates error handling.
-- Supports Java Form-based authentication (TBD).
- 
 Samples
 -------
 * Minimal example.
@@ -41,4 +36,5 @@ Dependencies
 
 TODO
 ----
-- Add Ant build script.
+- Add HttpClient.Builder.beforeRequest(HttpRequestInterceptor) and HttpClient.Builder.afterRequest(HttpResponseInterceptor)
+- Modify Ant build script (should be run outside IDEA IDE, add Javadoc generation).
