@@ -1,8 +1,7 @@
 simple-http-client
 ==================
 
-A lightweight wrapper around Google HTTP Java Client. Provides "facade" API to facilitate use of the Google HTTP Client
-for common tasks.
+Provides the "façade" API for the core parts of the Google HTTP Java Client library.
 
 Samples
 -------
