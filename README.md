@@ -7,7 +7,7 @@ for common tasks.
 Features
 --------
 - Facilitates error handling.
-- Supports Java Form-based authentication.
+- Supports Java Form-based authentication (TBD).
  
 Samples
 -------
