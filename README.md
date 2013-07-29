@@ -24,10 +24,10 @@ else
 * More advanced
 ```java
 HttpClient c = new HttpClient.Builder()
-                 .userAgent("MyHttpClient/1.0.0")
+                 .userAgent("HttpClient/1.0.0 (Google Java HTTP Client)")
                  .accept("application/json")
                  .build();
-GenericUrl url = new GenericUrl("http://en.wikipedia.org/wiki/Special:Random");
+GenericUrl url = new GenericUrl("https://api.github.com/users/protolab");
 HttpResponse resp = c.get(url);
 if (resp.isSuccessStatusCode())
     // process JSON response
