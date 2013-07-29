@@ -27,10 +27,7 @@ HttpClient c = new HttpClient.Builder()
                  .userAgent("MyHttpClient/1.0.0")
                  .accept("application/json")
                  .build();
-Map<String, Object> params = new HashMap<>();
-params.put("tags", "http");
-params.put("short", true);
-GenericUrl url = new GenericUrl(UriTemplate.expand("http://api.example.com/", "bookmarks/{tag}", params, true));
+GenericUrl url = new GenericUrl("http://en.wikipedia.org/wiki/Special:Random");
 HttpResponse resp = c.get(url);
 if (resp.isSuccessStatusCode())
     // process JSON response
