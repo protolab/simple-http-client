@@ -13,7 +13,8 @@ Samples
 -------
 * Minimal example.
 ```java
-HttpResponse resp = Client.get(new GenericUrl("http://en.wikipedia.org/wiki/Special:Random"));
+HttpClient c = HttpClient.newInstance();
+HttpResponse resp = c.get(new GenericUrl("http://en.wikipedia.org/wiki/Special:Random"));
 if (resp.isSuccessStatusCode())
     // process the response
 else
@@ -22,12 +23,10 @@ else
 
 * More advanced
 ```java
-private static final Logger LOGGER = Logger.getLogger(MyClass.class.getName());
-// ...
-Client c = Client
-                 .logger(LOGGER)
+HttpClient c = new HttpClient.Builder()
                  .userAgent("MyHttpClient/1.0.0")
-                 .accept("application/json");
+                 .accept("application/json")
+                 .build();
 Map<String, Object> params = new HashMap<>();
 params.put("tags", "http");
 params.put("short", true);
