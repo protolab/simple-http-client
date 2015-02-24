@@ -8,7 +8,8 @@ Samples
 * Minimal example.
 ```java
 HttpClient c = HttpClient.newInstance();
-HttpResponse resp = c.get(new GenericUrl("http://en.wikipedia.org/wiki/Special:Random"));
+GenericUrl url = new GenericUrl("http://en.wikipedia.org/wiki/Special:Random");
+HttpResponse resp = c.get(url);
 if (resp.isSuccessStatusCode())
     // process the response
 else
@@ -31,9 +32,4 @@ else
 
 Dependencies
 ------------
-- Google HTTP Java Client: https://code.google.com/p/google-http-java-client
-
-TODO
-----
-- Add HttpClient.Builder.beforeRequest(HttpRequestInterceptor) and HttpClient.Builder.afterRequest(HttpResponseInterceptor)
-- Modify Ant build script (should be run outside IDEA IDE, add Javadoc generation).
+- Google HTTP Java Client: https://github.com/google/google-http-java-client
